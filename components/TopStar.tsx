@@ -13,9 +13,11 @@ export const TopStar: React.FC<TopStarProps> = ({ mode }) => {
   
   // Calculate fixed positions
   // Scatter: random point in space
-  // Tree: Exact top of the tree (Height is 10, so we sit at ~10.2)
+  // Tree: Exact top of the tree. 
+  // Foliage height is 10, centered at 0, so range is [-5, 5].
+  // We place the star at 5.2 to sit just on the tip.
   const scatterPos = useMemo(() => getRandomSpherePoint(20), []);
-  const treePos = useMemo(() => new Vector3(0, 10.2, 0), []);
+  const treePos = useMemo(() => new Vector3(0, 5.2, 0), []);
   
   const targetFactor = mode === TreeMorphState.TREE_SHAPE ? 1 : 0;
   const currentFactor = useRef(0);

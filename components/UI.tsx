@@ -15,7 +15,7 @@ export const UI: React.FC<UIProps> = ({ mode, setMode }) => {
       {/* Header */}
       <header className="flex flex-col items-center md:items-start text-[#FFD700]">
         <h1 className="font-serif text-3xl md:text-5xl tracking-widest uppercase drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">
-          Arix Signature
+          XJY Signature
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] mt-2 text-emerald-100 opacity-80">
           The Art of Celebration
@@ -55,7 +55,7 @@ export const UI: React.FC<UIProps> = ({ mode, setMode }) => {
       <footer className="flex justify-between items-end text-[#FFD700]/60">
         <div className="hidden md:block w-32 h-[1px] bg-gradient-to-r from-[#FFD700]/50 to-transparent"></div>
         <p className="font-sans text-[10px] tracking-widest uppercase">
-          Interactive Experience 2024
+          XJY Christmas Limited Edition
         </p>
       </footer>
     </div>
